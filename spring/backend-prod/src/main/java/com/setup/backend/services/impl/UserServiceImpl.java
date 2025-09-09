@@ -11,6 +11,11 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +26,7 @@ import com.setup.backend.beans.User;
 import com.setup.backend.enums.Role;
 import com.setup.backend.exceptions.KnownException;
 import com.setup.backend.exceptions.UnknownException;
+import com.setup.backend.models.PageResponse;
 import com.setup.backend.models.UserDTO;
 import com.setup.backend.records.CacheToken;
 import com.setup.backend.records.ConfirmResetPasswordRequest;
@@ -296,12 +302,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDTO getUserById(Long userId) {
+    public UserDTO getUserById(Long userId) throws KnownException {
         User user = this.findById(userId);
         if (user != null) {
             return new UserDTO(user);
         }
-        return null;
+        throw new KnownException(Constants.USER_NOT_FOUND_CODE, Constants.USER_NOT_FOUND);
     }
 
     @Override
@@ -323,6 +329,30 @@ public class UserServiceImpl implements UserService {
         userFound.setEmail(usr.getEmail());
         User saveUser = usersRepository.save(userFound);
         return new UserDTO(saveUser);
+    }
+
+    @Override
+    public PageResponse<UserDTO> getPaginatedListOfUser(int page, int size, String criteria) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by(Direction.DESC, "createdOn"));
+
+        if (criteria == null || criteria.trim().isEmpty()) {
+            Page<User> userPage = usersRepository.findAll(pageable);
+            List<UserDTO> dtos = userPage.stream().map(UserDTO::new).toList();
+            return new PageResponse<>(
+                    dtos,
+                    pageable.getPageNumber(),
+                    pageable.getPageSize(),
+                    userPage.getTotalElements());
+        }
+        Page<User> userPage = usersRepository.getUserByFilterCriteria(pageable,
+                criteria);
+        List<UserDTO> filteredDto = userPage.stream().map(UserDTO::new).toList();
+        return new PageResponse<>(
+                filteredDto,
+                pageable.getPageNumber(),
+                pageable.getPageSize(),
+                userPage.getTotalElements());
+
     }
 
 }

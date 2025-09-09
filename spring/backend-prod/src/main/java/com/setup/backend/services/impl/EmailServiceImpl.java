@@ -13,19 +13,21 @@ public class EmailServiceImpl implements EmailService {
 
     @Override
     public void sendActivationEmail(User user, String activationHash) throws KnownException {
-        throw new UnsupportedOperationException("Unimplemented method 'sendActivationEmail'");
+        final int a = 1;
     }
 
     @Override
     public void sendLockedEmail(String recipientEmail, String userName, String lockedCause)
             throws KnownException, IOException {
-        throw new UnsupportedOperationException("Unimplemented method 'sendLockedEmail'");
+        final int a = 1;
+
     }
 
     @Override
     public void sendMailToResetPassword(String recipientEmail, String userName, String resetToken)
             throws KnownException {
-        throw new UnsupportedOperationException("Unimplemented method 'sendMailToResetPassword'");
+        final int a = 1;
+
     }
 
 }

@@ -58,6 +58,7 @@ public class UserDTO extends EntityBaseDTO implements Serializable {
         this.rolesString = user.getRolesString();
         this.roles = user.getRoles();
         this.permissions = user.getPermissions();
+        this.status = user.getStatus();
     }
 
     public UserDTO(@NotBlank(message = "First name is mandatory") String firstName,

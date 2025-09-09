@@ -7,6 +7,7 @@ import java.util.Set;
 import com.setup.backend.beans.User;
 import com.setup.backend.exceptions.KnownException;
 import com.setup.backend.exceptions.UnknownException;
+import com.setup.backend.models.PageResponse;
 import com.setup.backend.models.UserDTO;
 import com.setup.backend.records.CacheToken;
 import com.setup.backend.records.ConfirmResetPasswordRequest;
@@ -39,8 +40,10 @@ public interface UserService {
 
     public UserDTO confirmResetPassword(ConfirmResetPasswordRequest request) throws KnownException;
 
-    public UserDTO getUserById(Long userId);
+    public UserDTO getUserById(Long userId) throws KnownException;
 
     public UserDTO updateUserProfil(User usr) throws KnownException;
+
+    public PageResponse<UserDTO> getPaginatedListOfUser(int page, int size, String criteria);
 
 }

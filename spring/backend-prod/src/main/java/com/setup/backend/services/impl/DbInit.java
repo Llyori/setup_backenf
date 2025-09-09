@@ -23,7 +23,6 @@ public class DbInit {
             AuthenticationService authenticationService) {
         return args -> {
             try {
-
                 dbInitService.initUsers(authenticationService);
             } catch (KnownException e) {
                 e.printStackTrace();

@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.setup.backend.beans.User;
 import com.setup.backend.exceptions.KnownException;
 import com.setup.backend.exceptions.UnknownException;
+import com.setup.backend.models.PageResponse;
 import com.setup.backend.models.UserDTO;
 import com.setup.backend.models.UserListWrapperDto;
 import com.setup.backend.records.CacheToken;
@@ -33,6 +34,7 @@ import com.setup.backend.utils.Constants;
 import com.setup.backend.utils.UserMapper;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -118,7 +120,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/findById/{userId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<UserDTO> getUserById(@PathVariable("userId") Long userId) {
+    public ResponseEntity<UserDTO> getUserById(@PathVariable("userId") Long userId) throws KnownException {
         return new ResponseEntity<>(userService.getUserById(userId), HttpStatus.OK);
     }
 
@@ -147,6 +149,22 @@ public class UserController {
         } else {
             throw new KnownException(Constants.USER_NOT_FOUND_CODE, Constants.USER_NOT_FOUND);
         }
+    }
+
+    @Operation(summary = "Liste des utilisateurs.", description = "Récupère une liste paginée des utilisateurs avec filtres facultatifs par nom, prénom et email")
+    @ApiResponse(responseCode = "200", description = "Liste récupérée avec succès")
+    @GetMapping("/find-all")
+    public ResponseEntity<PageResponse<UserDTO>> getAllPaginatedConsultationList(
+
+            @Parameter(description = "Numéro de page (0 = première page)") @RequestParam(required = false, defaultValue = "0") int page,
+
+            @Parameter(description = "Taille de page (nombre d'éléments par page)") @RequestParam(required = false, defaultValue = "10") int size,
+
+            @Parameter(description = "Critère de recherche") @RequestParam(required = false) String criteria) {
+
+        PageResponse<UserDTO> response = userService.getPaginatedListOfUser(page, size,
+                criteria);
+        return ResponseEntity.ok(response);
     }
 
 }
