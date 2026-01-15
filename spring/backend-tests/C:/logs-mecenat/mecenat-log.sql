@@ -756,3 +756,296 @@ Caused by: java.net.ConnectException: Connexion refusée
 2025-09-09 13:48:50,263 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-3 - Shutdown completed.
 2025-09-09 13:48:50,263 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2025-09-09 13:48:50,265 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2026-01-15 22:35:18,181 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.setup.backend.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-15 22:35:18,356 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.setup.backend.BackendApplication for test class com.setup.backend.BackendApplicationTests
+2026-01-15 22:35:18,973 INFO o.s.b.StartupInfoLogger [main] Starting BackendApplicationTests using Java 17.0.17 with PID 977807 (started by bolan in /home/bolan/Documents/setup_backenf/spring/backend-tests)
+2026-01-15 22:35:18,974 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot, Spring
+2026-01-15 22:35:18,975 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "test"
+2026-01-15 22:35:19,797 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:19,799 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-15 22:35:19,842 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.ActivationHashRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:19,845 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.TokenRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:19,848 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:19,849 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 0 MongoDB repository interfaces.
+2026-01-15 22:35:20,194 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:20,196 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-15 22:35:20,265 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2026-01-15 22:35:20,948 WARN c.h.l.StandardLoggerFactory$StandardLogger [main] Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2026-01-15 22:35:21,037 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2026-01-15 22:35:21,037 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] Copyright (c) 2008-2021, Hazelcast, Inc. All Rights Reserved.
+2026-01-15 22:35:21,038 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] Hazelcast Platform 5.0-BETA-1 (20210713 - e8e010a) starting at [192.168.1.121]:5701
+2026-01-15 22:35:21,038 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] Cluster name: dev
+2026-01-15 22:35:21,038 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] Jet is disabled. Enable it by setting the "hz.jet.enabled" property to true.
+2026-01-15 22:35:21,583 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] Using Multicast discovery
+2026-01-15 22:35:21,591 WARN c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2026-01-15 22:35:22,015 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2026-01-15 22:35:22,021 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] [192.168.1.121]:5701 is STARTING
+2026-01-15 22:35:24,221 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.121]:5701 - 57f622e2-3e9d-4131-809c-4283b81185a6 this
+]
+
+2026-01-15 22:35:24,244 INFO c.h.l.StandardLoggerFactory$StandardLogger [main] [192.168.1.121]:5701 [dev] [5.0-BETA-1] [192.168.1.121]:5701 is STARTED
+2026-01-15 22:35:24,444 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-15 22:35:24,514 INFO o.h.Version [main] HHH000412: Hibernate ORM core version [WORKING]
+2026-01-15 22:35:24,517 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2026-01-15 22:35:24,721 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2026-01-15 22:35:24,913 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-15 22:35:24,948 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2026-01-15 22:35:25,489 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:mecenat-db user=USERMECENAT
+2026-01-15 22:35:25,492 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2026-01-15 22:35:25,928 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2026-01-15 22:35:27,000 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-01-15 22:35:27,093 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-15 22:35:27,505 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-15 22:35:28,317 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [main] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.setup.backend.repositories.UserRepository
+2026-01-15 22:35:28,608 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [main] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.setup.backend.repositories.TokenRepository
+2026-01-15 22:35:28,774 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [main] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.setup.backend.repositories.ActivationHashRepository
+2026-01-15 22:35:29,251 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='69695da11ba49e07ef009648', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:204)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:199)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.ConnectException: Connexion refusée
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68)
+	... 4 common frames omitted
+2026-01-15 22:35:29,258 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/17.0.17+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@35747e72, com.mongodb.Jep395RecordCodecProvider@3ea1c553]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2026-01-15 22:35:29,808 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-15 22:35:29,984 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68eb354d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7220e5c6, org.springframework.security.web.context.SecurityContextHolderFilter@1ee14df1, org.springframework.security.web.header.HeaderWriterFilter@7230812e, org.springframework.security.web.authentication.logout.LogoutFilter@c6f0fe, com.setup.backend.configs.security.JwtAuthenticationFilter@653b56ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16fa3231, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e724650, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a5554a9, org.springframework.security.web.session.SessionManagementFilter@42209b51, org.springframework.security.web.access.ExceptionTranslationFilter@470ea784, org.springframework.security.web.access.intercept.AuthorizationFilter@1431cc0a]
+2026-01-15 22:35:31,126 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-01-15 22:35:31,174 INFO o.s.b.StartupInfoLogger [main] Started BackendApplicationTests in 12.558 seconds (process running for 14.555)
+2026-01-15 22:35:31,759 INFO c.s.b.s.i.DBInitializationServiceImpl [main] admin token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImlhdCI6MTc2ODUxMjkzMSwiZXhwIjoxNzY4NTcyOTMxfQ.oEEWeqAldL4kS0L28iokVTrPUEMuXxgo-0kY5GxNops
+2026-01-15 22:35:31,862 INFO c.s.b.s.i.DBInitializationServiceImpl [main] User token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQHRlc3QuY29tIiwiaWF0IjoxNzY4NTEyOTMxLCJleHAiOjE3Njg1NzI5MzF9.r9eq-whjcEbKB-pzMW8Fu-Nnh6kOtBUxjyg0Z86vCmU
+2026-01-15 22:35:31,963 INFO c.s.b.s.i.DBInitializationServiceImpl [main] Enterprise token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbnRlcnByaXNlQHRlc3QuY29tIiwiaWF0IjoxNzY4NTEyOTMxLCJleHAiOjE3Njg1NzI5MzF9.iHTIXa0wlHC39BSRfO2KrLIfSKL0cvXfDArP_MRBnzI
+2026-01-15 22:35:32,059 INFO c.s.b.s.i.DBInitializationServiceImpl [main] association token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc3NvY2lhdGlvbkB0ZXN0LmNvbSIsImlhdCI6MTc2ODUxMjkzMiwiZXhwIjoxNzY4NTcyOTMyfQ.oTHYSazRg6Il6ayXOZxaEKSryOYmnTfSIxoX20euJ0s
+2026-01-15 22:35:33,448 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:33,449 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-15 22:35:33,468 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.ActivationHashRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:33,469 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.TokenRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:33,470 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:33,472 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 19 ms. Found 0 MongoDB repository interfaces.
+2026-01-15 22:35:33,593 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:33,594 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-15 22:35:33,671 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2026-01-15 22:35:35,735 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-15 22:35:35,756 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2026-01-15 22:35:35,757 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-15 22:35:35,763 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2026-01-15 22:35:35,768 INFO c.z.h.p.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:mecenat-db user=USERMECENAT
+2026-01-15 22:35:35,771 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2026-01-15 22:35:35,857 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2026-01-15 22:35:36,189 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-01-15 22:35:36,272 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-15 22:35:37,063 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='69695da91ba49e07ef009649', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:204)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:199)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.ConnectException: Connexion refusée
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68)
+	... 4 common frames omitted
+2026-01-15 22:35:37,063 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/17.0.17+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@35747e72, com.mongodb.Jep395RecordCodecProvider@3ea1c553]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2026-01-15 22:35:37,478 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-15 22:35:37,551 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@258b4c14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@567f3d4c, org.springframework.security.web.context.SecurityContextHolderFilter@b153542, org.springframework.security.web.header.HeaderWriterFilter@3c23a19d, org.springframework.security.web.authentication.logout.LogoutFilter@4ad72a1b, com.setup.backend.configs.security.JwtAuthenticationFilter@34088454, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a1d6a2e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b1319b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ed60b3b, org.springframework.security.web.session.SessionManagementFilter@7b831731, org.springframework.security.web.access.ExceptionTranslationFilter@30522f69, org.springframework.security.web.access.intercept.AuthorizationFilter@18177b66]
+2026-01-15 22:35:38,290 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-01-15 22:35:38,531 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:38,532 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:38,535 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 2 ms
+2026-01-15 22:35:38,577 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:38,579 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:38,583 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 2 ms
+2026-01-15 22:35:41,198 INFO o.s.b.StartupInfoLogger [main] Starting AuthenticationControllerIntTests using Java 17.0.17 with PID 977807 (started by bolan in /home/bolan/Documents/setup_backenf/spring/backend-tests)
+2026-01-15 22:35:41,198 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot, Spring
+2026-01-15 22:35:41,199 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "test"
+2026-01-15 22:35:42,074 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:42,078 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-15 22:35:42,140 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.ActivationHashRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:42,141 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.TokenRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:42,142 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:42,142 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 64 ms. Found 0 MongoDB repository interfaces.
+2026-01-15 22:35:42,450 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:42,454 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-15 22:35:42,714 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 257 ms. Found 3 JPA repository interfaces.
+2026-01-15 22:35:44,264 INFO c.h.l.StandardLoggerFactory$StandardLogger [hz.hazelcast-instance.HealthMonitor] [192.168.1.121]:5701 [dev] [5.0-BETA-1] processors=6, physical.memory.total=14,9G, physical.memory.free=311,0M, swap.space.total=0, swap.space.free=0, heap.memory.used=140,4M, heap.memory.free=397,6M, heap.memory.total=538,0M, heap.memory.max=3,7G, heap.memory.used/total=26,09%, heap.memory.used/max=3,69%, minor.gc.count=28, minor.gc.time=278ms, major.gc.count=0, major.gc.time=0ms, load.process=0,00%, load.system=100,00%, load.systemAverage=6,39, thread.count=59, thread.peakCount=61, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0,00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2026-01-15 22:35:44,315 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 0 (http)
+2026-01-15 22:35:44,396 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-auto-1"]
+2026-01-15 22:35:44,410 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2026-01-15 22:35:44,415 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.11]
+2026-01-15 22:35:44,871 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2026-01-15 22:35:44,879 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3669 ms
+2026-01-15 22:35:45,260 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-15 22:35:45,286 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2026-01-15 22:35:45,287 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-15 22:35:45,288 INFO c.z.h.HikariDataSource [main] HikariPool-3 - Starting...
+2026-01-15 22:35:45,298 INFO c.z.h.p.HikariPool [main] HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:mecenat-db user=USERMECENAT
+2026-01-15 22:35:45,299 INFO c.z.h.HikariDataSource [main] HikariPool-3 - Start completed.
+2026-01-15 22:35:45,369 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2026-01-15 22:35:45,640 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-01-15 22:35:45,696 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-15 22:35:46,182 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtAuthenticationFilter' configured for use
+2026-01-15 22:35:46,557 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='69695db21ba49e07ef00964a', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:204)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:199)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:159)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.ConnectException: Connexion refusée
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68)
+	... 4 common frames omitted
+2026-01-15 22:35:46,558 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/17.0.17+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@35747e72, com.mongodb.Jep395RecordCodecProvider@3ea1c553]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2026-01-15 22:35:46,887 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-15 22:35:46,948 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e775b6f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3106d80c, org.springframework.security.web.context.SecurityContextHolderFilter@167d7434, org.springframework.security.web.header.HeaderWriterFilter@61026c3e, org.springframework.security.web.authentication.logout.LogoutFilter@39eeda0f, com.setup.backend.configs.security.JwtAuthenticationFilter@7d486b9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e42e900, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cd3036a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58c48311, org.springframework.security.web.session.SessionManagementFilter@ab246c0, org.springframework.security.web.access.ExceptionTranslationFilter@388000e3, org.springframework.security.web.access.intercept.AuthorizationFilter@4451b5e9]
+2026-01-15 22:35:47,930 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-01-15 22:35:48,152 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-auto-1"]
+2026-01-15 22:35:48,240 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 38195 (http) with context path ''
+2026-01-15 22:35:48,255 INFO o.s.b.StartupInfoLogger [main] Started AuthenticationControllerIntTests in 7.209 seconds (process running for 31.636)
+2026-01-15 22:35:48,372 INFO c.s.b.s.i.DBInitializationServiceImpl [main] admin token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsImlhdCI6MTc2ODUxMjk0OCwiZXhwIjoxNzY4NTcyOTQ4fQ.JDTyxDsuyiSwJ1rZary2MVQfDXZ43zSmwcSyqezIMo8
+2026-01-15 22:35:48,523 INFO c.s.b.s.i.DBInitializationServiceImpl [main] User token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQHRlc3QuY29tIiwiaWF0IjoxNzY4NTEyOTQ4LCJleHAiOjE3Njg1NzI5NDh9.P47AIHstZa_8pQWE7AKwbh68B7F8XYAElmGPXC76PVc
+2026-01-15 22:35:48,673 INFO c.s.b.s.i.DBInitializationServiceImpl [main] Enterprise token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbnRlcnByaXNlQHRlc3QuY29tIiwiaWF0IjoxNzY4NTEyOTQ4LCJleHAiOjE3Njg1NzI5NDh9.LV2BuSOFpoRdT0SaPnVc9Jjrj-d6rrIy8dSxZMrLfW8
+2026-01-15 22:35:48,890 INFO c.s.b.s.i.DBInitializationServiceImpl [main] association token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc3NvY2lhdGlvbkB0ZXN0LmNvbSIsImlhdCI6MTc2ODUxMjk0OCwiZXhwIjoxNzY4NTcyOTQ4fQ.c5myedFg9dFH9RVy09Dysdv58KeZOHCZg_h-O-aHWog
+2026-01-15 22:35:50,218 INFO o.a.j.l.DirectJDKLog [http-nio-auto-1-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 22:35:50,221 INFO o.s.w.s.FrameworkServlet [http-nio-auto-1-exec-2] Initializing Servlet 'dispatcherServlet'
+2026-01-15 22:35:50,224 INFO o.s.w.s.FrameworkServlet [http-nio-auto-1-exec-2] Completed initialization in 2 ms
+2026-01-15 22:35:50,401 INFO o.a.j.l.DirectJDKLog [main] Pausing ProtocolHandler ["http-nio-auto-1"]
+2026-01-15 22:35:50,404 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2026-01-15 22:35:50,406 INFO o.a.j.l.DirectJDKLog [main] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-01-15 22:35:50,417 WARN o.a.j.l.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.17/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.17/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.17/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+ java.base@17.0.17/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.17/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.17/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.17/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.17/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.17/java.lang.Thread.run(Thread.java:840)
+2026-01-15 22:35:50,418 WARN o.a.j.l.DirectJDKLog [main] The web application [ROOT] appears to have started a thread named [HikariPool-3 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.17/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.17/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.17/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+ java.base@17.0.17/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.17/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.17/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.17/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.17/java.lang.Thread.run(Thread.java:840)
+2026-01-15 22:35:50,423 INFO o.a.j.l.DirectJDKLog [main] Stopping ProtocolHandler ["http-nio-auto-1"]
+2026-01-15 22:35:50,438 INFO o.a.j.l.DirectJDKLog [main] Destroying ProtocolHandler ["http-nio-auto-1"]
+2026-01-15 22:35:50,459 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-15 22:35:50,476 INFO c.z.h.HikariDataSource [main] HikariPool-3 - Shutdown initiated...
+2026-01-15 22:35:50,485 INFO c.z.h.HikariDataSource [main] HikariPool-3 - Shutdown completed.
+2026-01-15 22:35:50,571 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.setup.backend.controllers.unit_tests.AuthenticationControllerTests]: AuthenticationControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-15 22:35:50,833 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.setup.backend.BackendApplication for test class com.setup.backend.controllers.unit_tests.AuthenticationControllerTests
+2026-01-15 22:35:50,965 INFO o.s.b.StartupInfoLogger [main] Starting AuthenticationControllerTests using Java 17.0.17 with PID 977807 (started by bolan in /home/bolan/Documents/setup_backenf/spring/backend-tests)
+2026-01-15 22:35:50,966 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot, Spring
+2026-01-15 22:35:50,971 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 22:35:51,597 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:51,598 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-15 22:35:51,696 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.ActivationHashRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:51,697 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.TokenRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:51,700 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:51,700 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 98 ms. Found 0 MongoDB repository interfaces.
+2026-01-15 22:35:52,815 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-01-15 22:35:52,891 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@be5560c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b754991, org.springframework.security.web.context.SecurityContextHolderFilter@2de2cd72, org.springframework.security.web.header.HeaderWriterFilter@4c2a60d4, org.springframework.security.web.csrf.CsrfFilter@1c7a5a70, org.springframework.security.web.authentication.logout.LogoutFilter@233a15b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ec6a6c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f3e811f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@534c42a1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39247f97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6385bb64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@608d711a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@490e5798, org.springframework.security.web.access.ExceptionTranslationFilter@292545d3, org.springframework.security.web.access.intercept.AuthorizationFilter@32bf0c1f]
+2026-01-15 22:35:52,910 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:52,910 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:52,912 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:52,921 INFO o.s.b.StartupInfoLogger [main] Started AuthenticationControllerTests in 2.082 seconds (process running for 36.302)
+2026-01-15 22:35:52,943 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:52,943 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:52,944 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 0 ms
+2026-01-15 22:35:53,095 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.setup.backend.controllers.unit_tests.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-01-15 22:35:53,123 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.setup.backend.BackendApplication for test class com.setup.backend.controllers.unit_tests.UserControllerTests
+2026-01-15 22:35:53,184 INFO o.s.b.StartupInfoLogger [main] Starting UserControllerTests using Java 17.0.17 with PID 977807 (started by bolan in /home/bolan/Documents/setup_backenf/spring/backend-tests)
+2026-01-15 22:35:53,185 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot, Spring
+2026-01-15 22:35:53,186 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 22:35:53,423 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-15 22:35:53,428 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-15 22:35:53,458 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.ActivationHashRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:53,459 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.TokenRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:53,460 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.setup.backend.repositories.UserRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2026-01-15 22:35:53,462 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 33 ms. Found 0 MongoDB repository interfaces.
+2026-01-15 22:35:53,911 WARN o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-01-15 22:35:53,967 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b3cd285, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@796bf4e2, org.springframework.security.web.context.SecurityContextHolderFilter@5db6a46a, org.springframework.security.web.header.HeaderWriterFilter@2556bd86, org.springframework.security.web.csrf.CsrfFilter@74bd3207, org.springframework.security.web.authentication.logout.LogoutFilter@573a6b32, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40164397, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4bf3d772, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@b930aa3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@44f1d35c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@408688d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b59fb12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41b243be, org.springframework.security.web.access.ExceptionTranslationFilter@41bb5fec, org.springframework.security.web.access.intercept.AuthorizationFilter@16b28cec]
+2026-01-15 22:35:53,991 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:53,992 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:53,993 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,062 INFO o.s.b.StartupInfoLogger [main] Started UserControllerTests in 0.928 seconds (process running for 37.443)
+2026-01-15 22:35:54,081 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,084 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,086 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,132 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,132 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,141 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 5 ms
+2026-01-15 22:35:54,174 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,174 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,175 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,213 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,213 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,214 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,252 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,253 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,256 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 3 ms
+2026-01-15 22:35:54,298 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,299 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,302 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,334 WARN c.s.b.e.GlobalExceptionHandler [main] Erreur connue: 601 - User not found
+2026-01-15 22:35:54,384 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,387 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,389 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,399 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [main] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.setup.backend.controllers.UserController
+2026-01-15 22:35:54,438 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,441 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,443 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,450 WARN c.s.b.e.GlobalExceptionHandler [main] Erreur connue: 601 - User not found
+2026-01-15 22:35:54,467 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,468 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,470 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,501 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,501 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,503 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,524 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2026-01-15 22:35:54,525 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2026-01-15 22:35:54,526 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2026-01-15 22:35:54,533 WARN c.s.b.e.GlobalExceptionHandler [main] Erreur connue: 601 - User not found
+2026-01-15 22:35:58,254 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-15 22:35:58,259 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown initiated...
+2026-01-15 22:35:58,268 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-15 22:35:58,269 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2026-01-15 22:35:58,269 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown completed.
+2026-01-15 22:35:58,282 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
