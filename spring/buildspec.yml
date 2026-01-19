@@ -10,7 +10,6 @@ phases:
   pre_build:
     commands:
       - echo "[PRE_BUILD] Nettiyage du projet..."
-      - mvn clean
   build:
     commands:
       - echo "[BUILD] Lancement du build parent"
@@ -19,9 +18,9 @@ phases:
     commands:
       - echo "[POST_BUILD] Build terminé avec succès !"
       - ls -R backend-prod/target
-  artifacts:
-    files:
-      - backend-prod/target/*.jar
-      - backend-tests/target/site/jacoco/*
-    base-directory: .
-    discard-paths: yes
+artifacts:
+  base-directory: .
+  files:
+    - backend-prod/target/*.jar
+    - backend-tests/target/site/jacoco/*
+  discard-paths: yes
