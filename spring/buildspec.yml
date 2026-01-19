@@ -16,7 +16,7 @@ phases:
     commands:
       - echo "[BUILD] Lancement du build parent"
       - pwd
-      - mvn clean package -DskipTests
+      - mvn clean package
   post_build:
     commands:
       - echo "[POST_BUILD] Build terminé avec succès !"
