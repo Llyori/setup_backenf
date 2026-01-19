@@ -14,7 +14,8 @@ phases:
   build:
     commands:
       - echo "[BUILD] Lancement du build parent"
-      - mvn -f spring/pom.xml clean package
+      - cd spring
+      - mvn clean package
   post_build:
     commands:
       - echo "[POST_BUILD] Build terminé avec succès !"
