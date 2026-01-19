@@ -10,6 +10,8 @@ phases:
   pre_build:
     commands:
       - echo "[PRE_BUILD] Nettiyage du projet..."
+      - cd spring
+      - pwd
   build:
     commands:
       - echo "[BUILD] Lancement du build parent"
